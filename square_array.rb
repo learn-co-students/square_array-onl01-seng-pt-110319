@@ -1,8 +1,10 @@
 def square_array(array)
-
+  newArray = []
   counter = 0
-  while counter < array.size
-    array[counter] *= array[counter]
-  end
-  return array
+  array.each{ |number| 
+   newArray[counter] = number*number
+   counter+=1
+  }
+  return newArray
+  
 end
